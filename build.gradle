@@ -17,7 +17,11 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    // DOMA
+    implementation 'org.seasar.doma.boot:doma-spring-boot-starter:1.7.0'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // MySQLデータベースドライバ
+    runtimeOnly 'mysql:mysql-connector-java'
 }
 
 tasks.named('test') {
